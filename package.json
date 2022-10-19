@@ -1,9 +1,12 @@
 {
+  "homepage": "https://wrseno.github.io",
   "name": "wrseno",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -30,6 +33,7 @@
     "autoprefixer": "^10.4.12",
     "eslint": "8.25.0",
     "eslint-config-next": "12.3.1",
+    "gh-pages": "^4.0.0",
     "postcss": "^8.4.17",
     "tailwindcss": "^3.1.8",
     "typescript": "4.8.4"
