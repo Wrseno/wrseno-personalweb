@@ -2,6 +2,7 @@ import Layout from './layout';
 import Link from 'next/link';
 import Social from './components/Social';
 import socialsJSON from '../data/socials.json';
+import Image from 'next/image';
 
 interface HomeProps {
   socials: Array<any>;
@@ -31,14 +32,16 @@ const Home = (props: HomeProps) => {
 
             <div className="w-full self-end px-4 lg:w-1/2 md:w-1/2">
               <div className="relative mt-10">
-                <img 
+                <Image 
                 src='/img/warseno-removebg.png'
                 alt='Warseno Bambang Setyono'
+                width='400'
+                height='300'
                 className='max-w-full mx-auto'
                 />
                 <span className='absolute -bottom-8 -z-10 left-1/2 -translate-x-1/2'>
                   <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width={400} height={400}>
-                    <path fill="#ad081b" d="M47.6,-28.7C59.2,-7.5,64.2,16.2,55.2,36.9C46.2,57.5,23.1,75,-2.4,76.4C-28,77.8,-56,63.1,-65.1,42.5C-74.1,21.8,-64.3,-4.8,-50.3,-27.4C-36.3,-49.9,-18.2,-68.4,-0.1,-68.4C18,-68.4,36.1,-49.8,47.6,-28.7Z" transform="translate(100 100) scale(1.1)" />
+                    <path fill="#ad081b" d="M29.9,-49.3C40.2,-39.9,50.9,-34,61.1,-24.2C71.4,-14.4,81.1,-0.7,79.4,11.5C77.8,23.6,64.7,34.2,53.2,44.2C41.6,54.2,31.5,63.6,19.2,68.9C6.8,74.2,-7.8,75.4,-22.7,73C-37.6,70.6,-52.7,64.7,-59.4,53.4C-66.1,42.2,-64.4,25.6,-66.1,9.9C-67.8,-5.9,-72.8,-20.7,-68.2,-31.3C-63.6,-41.9,-49.3,-48.2,-36.3,-56.3C-23.3,-64.4,-11.7,-74.3,-0.9,-72.9C9.8,-71.4,19.6,-58.6,29.9,-49.3Z" transform="translate(100 100) scale(1.1)" />
                   </svg>
                 </span>
               </div>

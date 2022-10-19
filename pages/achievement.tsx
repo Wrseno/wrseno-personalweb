@@ -2,6 +2,7 @@ import Layout from "./layout";
 import achievementJSON from '../data/achievements.json';
 import certificateJSON from '../data/certificate.json';
 import AchievementCard from './components/AchievementCard';
+import Image from 'next/image';
 
 interface AchievementProps {
   achievement: Array<any>;
@@ -35,10 +36,10 @@ export default function Achievement(props: AchievementProps) {
                     {certificate.map((cert, index)=>{
                         return (
                           <li key={index} className="mx-auto mb-8 hover:opacity-75 hover:cursor-pointer border-2 border-slate-300 rounded-lg bg-slate-300">
-                            <img
-                            src={`/img/${cert.image}`}
-                            width='300'
-                            height='300'
+                            <Image
+                              src={`/img/${cert.image}`}
+                              width='300'
+                              height='300'
                             />
                             <p className="text-base text-center py-2 text-black font-semibold">{cert.title} <br /> {cert.course} <a target='_blank' href={cert.url} className="hover:text-slate-500 font-bold">Detail</a></p>
                           </li>
