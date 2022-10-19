@@ -19,10 +19,10 @@ const Home = (props: HomeProps) => {
         <section className='container lg:px-36'>
           <div className="flex flex-wrap">
             <div className="w-full self-center px-4 lg:w-1/2 md:w-1/2">
-              <h1 className='text-base font-bold md:text-xl lg:text-2xl'>Hello, <span className='text-secondary '>I&#8216;m Seno.</span></h1>
+              <h1 className='text-base font-bold md:text-xl lg:text-2xl'>Hello, <span className='text-secondary '>I&#39;m Seno.</span></h1>
               <h2 className='text-3xl font-bold mb-4 lg:text-5xl'>Web Developer</h2>
               <p className='font-semibold'>My full name is <span className='font-bold'>Warseno Bambang Setyono</span>. 
-                <br/>I'm a <span className='text-secondary font-bold'>Web Engineering</span> and <span className='text-secondary font-bold'>Content Creator</span>,
+                <br/>I&#39;m a <span className='text-secondary font-bold'>Web Engineering</span> and <span className='text-secondary font-bold'>Content Creator</span>,
                 I love exploring new technology.
               </p>
               <div className='text-base font-semibold border-2 py-3 px-8 rounded-lg w-40 mt-2 hover:bg-primary hover:text-black hover:font-bold hover:ease-in-out hover:duration-300 hover:cursor-pointer hover:border-black'>

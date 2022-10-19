@@ -21,14 +21,14 @@ export default function About(props: AboutProps) {
               <div className="w-full self-center px-4 ">
                 <h1 className='text-lg font-bold lg:text-xl mt-24'>Who Am I</h1>
                 <p className='text-base mb-4 text-slate-300'>I am a web developer from <span className='text-secondary font-semibold'>Wonogiri, Indonesia.</span> Working in web development and I also love to create video on youtube.
-                Until now I'm still learning about programming. 
+                Until now I&#39;m still learning about programming. 
                 <br /><br />My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. 
                 </p>
               </div>
             </div>
 
             <div className="w-full self-center px-4 my-8">
-                <h1 className='text-lg font-bold mb-4 lg:text-xl'>What I'm Doing</h1>
+                <h1 className='text-lg font-bold mb-4 lg:text-xl'>What I&#39;m Doing</h1>
                 <ul className='lg:grid lg:grid-cols-2 md:grid-cols-2'>
                   <li  className='lg:flex justify-start items-start gap-5 p-8 border-2 border-gray-500 rounded-xl my-2 mx-2'>
                     <div>
@@ -93,7 +93,7 @@ export default function About(props: AboutProps) {
                               <Image src={`/img/${skill.image}`}
                                 width='70'
                                 height='70'
-                                alt='skills'
+                                alt="skills"
                               />
                               <p className='text-center font-semibold'>{skill.title}</p>
                             </li>
