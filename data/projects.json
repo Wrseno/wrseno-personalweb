@@ -1,0 +1,53 @@
+[
+    {
+        "title": "Blog Website",
+        "desc": "Website for writing articles. built with NextJS, Tailwind CSS and GraphCMS.",
+        "image": "blog.png",
+        "category": [
+            {
+                "name":"NextJS"
+            },
+            {
+                "name": "Tailwind CSS"
+            },
+            {
+                "name": "Graph CMS"
+            }
+        ],
+        "repo": "https://github.com/Wrseno/blog-nextjs",
+        "demo": "https://"
+    },
+    {
+        "title": "Personal Website 2.0",
+        "desc": "This is my personal website. Made using NextJS and Tailwind CSS. Explain about myself.",
+        "image": "personal_website.png",
+        "category": [
+            {
+                "name": "NextJS"
+            },
+            {
+                "name": "Tailwind CSS"
+            }
+        ],
+        "repo": "https://www.github.com/Wrseno",
+        "demo": "https://www.wrseno.my.id"
+    },
+    {
+        "title": "Personal Website 1.0",
+        "desc": "This is my personal website. Made using HTML, Vanilla CSS, and a little JS. Explain about myself.",
+        "image": "personal_website_1.png",
+        "category": [
+            {
+                "name":"HTML"
+            },
+            {
+                "name": "CSS"
+            }, 
+            {
+                "name": "JS"
+            }
+        ],
+        "repo": "https://github.com/Wrseno/wrseno.github.io",
+        "demo": "https://www.wrseno.my.id"
+    }
+]
