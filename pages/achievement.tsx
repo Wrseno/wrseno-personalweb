@@ -40,6 +40,7 @@ export default function Achievement(props: AchievementProps) {
                               src={`/img/${cert.image}`}
                               width='300'
                               height='300'
+                              alt='certificate'
                             />
                             <p className="text-base text-center py-2 text-black font-semibold">{cert.title} <br /> {cert.course} <a target='_blank' href={cert.url} className="hover:text-slate-500 font-bold">Detail</a></p>
                           </li>

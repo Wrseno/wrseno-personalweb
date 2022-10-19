@@ -93,6 +93,7 @@ export default function About(props: AboutProps) {
                               <Image src={`/img/${skill.image}`}
                                 width='70'
                                 height='70'
+                                alt='skills'
                               />
                               <p className='text-center font-semibold'>{skill.title}</p>
                             </li>

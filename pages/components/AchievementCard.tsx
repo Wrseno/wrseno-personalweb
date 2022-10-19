@@ -23,6 +23,7 @@ const AchievementCard = (props: AchievementCardProps) => {
                 <Image src={`/img/${ach.image}`}
                 width="384px"
                 height="224px"
+                alt='achievement'
                 className="rounded-lg mx-auto"
                 />
                 <div className="description my-auto mx-4">
