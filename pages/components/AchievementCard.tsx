@@ -12,7 +12,7 @@ interface AchievementCardProps {
     layout: boolean;
 }
 
-const AchievementCard = (props: AchievementCardProps) => {
+export default function AchievementCard (props: AchievementCardProps)  {
 
     const {layout, ach} = props;
 
@@ -34,5 +34,3 @@ const AchievementCard = (props: AchievementCardProps) => {
         </div>
     );
 };
-
-export default AchievementCard;

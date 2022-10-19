@@ -13,7 +13,7 @@ interface SocialProps {
   social: SocialDetail;
 }
 
-const Social = (props: SocialProps) => {
+export default function (props: SocialProps) {
 
     const {social} = props;
 
@@ -31,5 +31,4 @@ const Social = (props: SocialProps) => {
   )
 }
 
-export default Social
 

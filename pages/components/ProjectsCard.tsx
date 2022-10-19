@@ -17,7 +17,7 @@ interface ProjectCardProps {
     layout: boolean;
 }
 
-const ProjectsCard = (props: ProjectCardProps) => {
+export default function ProjectsCard (props: ProjectCardProps) {
 
     const {layout, project} = props;
 
@@ -65,5 +65,3 @@ const ProjectsCard = (props: ProjectCardProps) => {
 </>
   )
 }
-
-export default ProjectsCard
