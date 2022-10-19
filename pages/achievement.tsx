@@ -1,7 +1,7 @@
-import Layout from "./layout";
+import Layout from "../layout";
 import achievementJSON from '../data/achievements.json';
 import certificateJSON from '../data/certificate.json';
-import AchievementCard from './components/AchievementCard';
+import AchievementCard from '../components/AchievementCard';
 import Image from 'next/image';
 
 interface AchievementProps {

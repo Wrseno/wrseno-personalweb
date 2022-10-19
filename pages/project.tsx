@@ -1,7 +1,7 @@
 import React from 'react';
-import Layout from './layout';
+import Layout from '../layout';
 import projectsJSON from '../data/projects.json';
-import ProjectsCard from './components/ProjectsCard';
+import ProjectsCard from '../components/ProjectsCard';
 
 interface ProjectProps {
   projects: Array<any>;

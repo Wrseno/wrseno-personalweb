@@ -1,6 +1,6 @@
-import Layout from './layout';
+import Layout from '../layout';
 import Link from 'next/link';
-import Social from './components/Social';
+import Social from '../components/Social';
 import socialsJSON from '../data/socials.json';
 import Image from 'next/image';
 

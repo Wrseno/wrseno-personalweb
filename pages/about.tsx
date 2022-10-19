@@ -1,4 +1,4 @@
-import Layout from './layout';
+import Layout from '../layout';
 import Image from 'next/image';
 import skillsJSON from '../data/skills.json';
 
