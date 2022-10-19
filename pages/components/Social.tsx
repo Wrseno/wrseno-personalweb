@@ -13,7 +13,7 @@ interface SocialProps {
   social: SocialDetail;
 }
 
-export default function (props: SocialProps) {
+export default function Social (props: SocialProps) {
 
     const {social} = props;
 

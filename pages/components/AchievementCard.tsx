@@ -34,3 +34,4 @@ export default function AchievementCard (props: AchievementCardProps)  {
         </div>
     );
 };
+    
