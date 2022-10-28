@@ -39,7 +39,6 @@ export default function Header() {
                   <li className='group'><Link href='about'><a className='text-base text-dark py-2 mx-8 lg:mx-4 group-hover:text-secondary group-hover:ease-in-out group-hover:duration-300 flex lg:text-lg lg:font-semibold'>About</a></Link></li>
                   <li className='group'><Link href='achievement'><a className='text-base text-dark py-2 mx-8 lg:mx-4 group-hover:text-secondary group-hover:ease-in-out group-hover:duration-300 flex lg:text-lg lg:font-semibold'>Achievements</a></Link></li>
                   <li className='group'><Link href='project'><a className='text-base text-dark py-2 mx-8 lg:mx-4 group-hover:text-secondary group-hover:ease-in-out group-hover:duration-300 flex lg:text-lg lg:font-semibold'>Projects</a></Link></li>
-                  <li className='group'><Link href='blog'><a className='text-base text-dark py-2 mx-8 lg:mx-4 group-hover:text-secondary group-hover:ease-in-out group-hover:duration-300 flex lg:text-lg lg:font-semibold'>Blog</a></Link></li>
                 </ul>
               </nav>
             </div>
