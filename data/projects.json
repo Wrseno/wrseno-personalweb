@@ -14,8 +14,8 @@
                 "name": "Graph CMS"
             }
         ],
-        "repo": "https://github.com/Wrseno/blog-nextjs",
-        "demo": "https://"
+        "repo": "https://github.com/Wrseno/nextjs-blog",
+        "demo": "#"
     },
     {
         "title": "Personal Website 2.0",
@@ -29,8 +29,8 @@
                 "name": "Tailwind CSS"
             }
         ],
-        "repo": "https://www.github.com/Wrseno",
-        "demo": "https://www.wrseno.my.id"
+        "repo": "https://www.github.com/Wrseno/personalweb-nextjs",
+        "demo": "https://www.wrseno.vercel.app"
     },
     {
         "title": "Personal Website 1.0",
@@ -47,7 +47,7 @@
                 "name": "JS"
             }
         ],
-        "repo": "https://github.com/Wrseno/wrseno.github.io",
-        "demo": "https://www.wrseno.my.id"
+        "repo": "https://github.com/Wrseno/personal-web",
+        "demo": "https://wrseno.github.io/personal-web"
     }
 ]
