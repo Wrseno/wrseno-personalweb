@@ -1,7 +1,25 @@
 [
     {
+        "title": "Top Up Game Website",
+        "desc": "Website to sell game vouchers. Built with NextJS, Tailwind CSS and GraphCMS.",
+        "image": "zeynostore.png",
+        "category": [
+            {
+                "name":"NextJS"
+            },
+            {
+                "name": "Tailwind CSS"
+            },
+            {
+                "name": "Graph CMS"
+            }
+        ],
+        "repo": "#",
+        "demo": "https://zeynostore-wrseno.vercel.app/"
+    },
+    {
         "title": "Blog Website",
-        "desc": "Website for writing articles. built with NextJS, Tailwind CSS and GraphCMS.",
+        "desc": "Website for writing articles. Built with NextJS, Tailwind CSS and GraphCMS.",
         "image": "blog.png",
         "category": [
             {
@@ -30,7 +48,7 @@
             }
         ],
         "repo": "https://www.github.com/Wrseno/personalweb-nextjs",
-        "demo": "https://www.wrseno.vercel.app"
+        "demo": "https://www.wrseno.my.id"
     },
     {
         "title": "Personal Website 1.0",
