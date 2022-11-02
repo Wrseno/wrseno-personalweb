@@ -1,7 +1,10 @@
 import Link from 'next/link';
 import { useState } from 'react';
+import Router, { useRouter } from 'next/router';
 
 export default function Header() {
+
+  const {asPath} = useRouter();
 
   const [hamburger, setBurgerClass] = useState('hamburger-nonactive');
   const [menu_class, setMenuClass] = useState('menu-hidden');
@@ -36,9 +39,9 @@ export default function Header() {
               <nav id={menu_class} className='hidden absolute py-5 bg-black font-semibold
                shadow-lg rounded-lg max-w-[200px] w-full right-4 top-full text-white lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none'>
                 <ul className='block lg:flex'>
-                  <li className='group'><Link href='about'><a className='text-base text-dark py-2 mx-8 lg:mx-4 group-hover:text-secondary group-hover:ease-in-out group-hover:duration-300 flex lg:text-lg lg:font-semibold'>About</a></Link></li>
-                  <li className='group'><Link href='achievement'><a className='text-base text-dark py-2 mx-8 lg:mx-4 group-hover:text-secondary group-hover:ease-in-out group-hover:duration-300 flex lg:text-lg lg:font-semibold'>Achievements</a></Link></li>
-                  <li className='group'><Link href='project'><a className='text-base text-dark py-2 mx-8 lg:mx-4 group-hover:text-secondary group-hover:ease-in-out group-hover:duration-300 flex lg:text-lg lg:font-semibold'>Projects</a></Link></li>
+                  <li className='group'><Link href='/about'><a className={`${asPath === '/about' ? 'text-secondary font-bold' : 'text-white'} text-base text-dark py-2 mx-8 lg:mx-4 group-hover:text-secondary group-hover:ease-in-out group-hover:duration-300 flex lg:text-lg lg:font-semibold`}>About</a></Link></li>
+                  <li className='group'><Link href='/achievement'><a className={`${asPath === '/achievement' ? 'text-secondary font-bold' : 'text-white'} text-base text-dark py-2 mx-8 lg:mx-4 group-hover:text-secondary group-hover:ease-in-out group-hover:duration-300 flex lg:text-lg lg:font-semibold`}>Achievements</a></Link></li>
+                  <li className='group'><Link href='/project'><a className={`${asPath === '/project' ? 'text-secondary font-bold' : 'text-white'} text-base text-dark py-2 mx-8 lg:mx-4 group-hover:text-secondary group-hover:ease-in-out group-hover:duration-300 flex lg:text-lg lg:font-semibold`}>Projects</a></Link></li>
                 </ul>
               </nav>
             </div>
