@@ -32,6 +32,8 @@ export default function ProjectsCard (props: ProjectCardProps) {
                 width="500px"
                 height="270px"
                 className='rounded-lg'
+                placeholder="blur"
+                blurDataURL={`/img/${project.image}`}
             />
         </div>
         <div className={`w-full flex flex-col text-center justofy-between p-4 
@@ -42,9 +44,10 @@ export default function ProjectsCard (props: ProjectCardProps) {
                 <ul className='flex mt-4 justify-center md:justify-start'>
                     {
                         project.category.map((item, index) => {
+
                             return (
-                                <li key={index} className="mx-1 md:mx-0 md:mr-2">
-                                    <div className='bg-primary text-white py-2 px-4 mr-2 rounded-md font-bold'>
+                                <li key={index} className="mx-1 md:mx-0 md:mr-2 grid">
+                                    <div className={`bg-primary text-white py-2 px-4 mr-2 rounded-md font-bold}`}>
                                         {item.name}
                                     </div>
                                 </li>

@@ -1,7 +1,7 @@
-import Head from 'next/head';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import {ReactNode} from 'react';
+import Head from "next/head";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import {ReactNode} from "react";
 
 interface LayoutProps{
     children: ReactNode;
@@ -12,7 +12,7 @@ export default function Layout(props: LayoutProps) {
   return (
     <>
        <Head>
-          <title>Wrseno | {''} {pageTitle}</title>
+          <title>Wrseno | {""} {pageTitle}</title>
           <meta name="author" content="Warseno Bambang Setyono"/>
           <meta name="description" content="Warseno Portofolio Website"/>
           <meta name="keywords" content="Warseno, Warseno Bambang, Warseno Bambang Setyono, wrseno, wrzeno, Warseno Skanja, Warseno SMK 1"/>

@@ -19,7 +19,7 @@ export default function Social (props: SocialProps) {
 
   return (
     <div>
-        <li className='mb-4 block lg:mb-6'>
+        <li className="mb-4 block lg:mb-6">
           <button onClick={()=> window.open(social.url, "_blank")}>
                     <FontAwesomeIcon
           icon={["fab", social.name]}
