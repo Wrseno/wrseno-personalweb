@@ -23,7 +23,7 @@ export default function About(props: AboutProps) {
                 <h1 className="text-lg font-bold lg:text-xl mt-24">Who Am I</h1>
                 <p className="text-base mb-4 text-slate-300">I am a web developer from <span className="text-gradient font-bold">Wonogiri, Indonesia.</span> Working in <span className="font-bold">Web Development</span> and I also love to create video on <span className="font-bold"><Link href="https://youtube.com/zeyxofficial" >Youtube</Link></span>.
                 <br/> I start learning Web Development in early 2022, after following <span className="font-bold">LKS Web Technologies</span>. 
-                <br/> Until now I&#39;m still learning about <span className="font-bold">Programming</span>. 
+                <br/> Until now I&apos;m still learning about <span className="font-bold">Programming</span>. 
                 </p>
               </div>
             </div>
