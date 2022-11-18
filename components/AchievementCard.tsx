@@ -29,8 +29,8 @@ export default function AchievementCard (props: AchievementCardProps)  {
                 blurDataURL={`/img/${ach.image}`}
                 />
                 <div className="description my-auto lg:mx-4">
-                    <h1 className="font-bold text-xl text-slate-300 my-2">{ach.title}</h1>
-                    <p className="text-base text-slate-300">{ach.desc}</p>
+                    <h1 className="font-bold text-xl dark:text-slate-300 my-2">{ach.title}</h1>
+                    <p className="text-base dark:text-slate-300">{ach.desc}</p>
                 </div>
             </div>
         </div>

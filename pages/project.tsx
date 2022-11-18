@@ -13,7 +13,7 @@ export default function Projects(props: ProjectProps) {
 
   return (
     <Layout pageTitle="Projects Page">
-      <article id="project_page" className="pt-32">
+      <main id="project_page" className="pt-32">
           <section className="container lg:px-36">
             <div className="flex flex-wrap relative">
               <h1 className="w-full text-3xl font-bold text-center">Projects</h1>
@@ -31,7 +31,7 @@ export default function Projects(props: ProjectProps) {
               </div>
 
           </section>          
-      </article>
+      </main>
     </Layout>
   );
 };

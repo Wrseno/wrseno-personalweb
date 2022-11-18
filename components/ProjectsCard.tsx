@@ -58,8 +58,8 @@ export default function ProjectsCard (props: ProjectCardProps) {
             </div>
 
             <div className="flex justify-center mt-2 md:justify-start md:mt-0">
-                <Link href={`${project.repo}`} ><a  className='mr-4 text-black bg-white my-6 flex items-center py-2 px-4 w-28 rounded-md font-semibold'><BsGithub className='mr-2'/> Github</a></Link>
-                <Link href={`${project.demo}`} ><a className='mr-4 text-black bg-white my-6 flex items-center py-2 px-4 w-28 rounded-md font-semibold'><BsLink45Deg className='mr-2'/> Demo</a></Link>
+                <Link href={`${project.repo}`} ><a  className='mr-4 text-white bg-black dark:text-black dark:bg-white my-6 flex items-center py-2 px-4 w-28 rounded-md font-semibold'><BsGithub className='mr-2'/> Github</a></Link>
+                <Link href={`${project.demo}`} ><a className='mr-4 text-white bg-black dark:text-black dark:bg-white my-6 flex items-center py-2 px-4 w-28 rounded-md font-semibold'><BsLink45Deg className='mr-2'/> Demo</a></Link>
             </div>
 
         </div>

@@ -15,7 +15,7 @@ export default function Achievement(props: AchievementProps) {
 
   return (
     <Layout pageTitle="Achievements Page">
-        <div id='achievement_page' className='pt-32'>
+        <main id='achievement_page' className='pt-32'>
           <div className='container lg:px-36'>
             <div className="flex flex-wrap relative">
                 <h1 className='w-full text-3xl font-bold text-center'>Achievements</h1>
@@ -52,7 +52,7 @@ export default function Achievement(props: AchievementProps) {
                 </div>
             </div>
           </div>          
-      </div>
+      </main>
     </Layout>
   );
 };

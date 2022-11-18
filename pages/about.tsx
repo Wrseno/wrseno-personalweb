@@ -14,14 +14,14 @@ export default function About(props: AboutProps) {
   return (
     <div>
       <Layout pageTitle="About Page">
-        <article id="about_page" className="pt-32">
+        <main id="about_page" className="pt-32">
           <section className="container lg:px-36">
             <div className="flex flex-wrap relative">
                 <h1 className="w-full text-3xl font-bold text-center">About Me</h1>
                 <div className="w-16 h-1.5 rounded-full bg-primary absolute lg:left-96 lg:top-12 left-24 top-10"></div>
               <div className="w-full self-center px-4 ">
                 <h1 className="text-lg font-bold lg:text-xl mt-24">Who Am I</h1>
-                <p className="text-base mb-4 text-slate-300">I am a web developer from <span className="text-gradient font-bold">Wonogiri, Indonesia.</span> Working in <span className="font-bold">Web Development</span> and I also love to create video on <span className="font-bold"><Link href="https://youtube.com/zeyxofficial" >Youtube</Link></span>.
+                <p className="text-base mb-4 dark:text-slate-300">I am a web developer from <span className="text-gradient font-bold">Wonogiri, Indonesia.</span> Working in <span className="font-bold">Web Development</span> and I also love to create video on <span className="font-bold"><Link href="https://youtube.com/zeyxofficial" >Youtube</Link></span>.
                 <br/> I start learning Web Development in early 2022, after following <span className="font-bold">LKS Web Technologies</span>. 
                 <br/> Until now I&#39;m still learning about <span className="font-bold">Programming</span>. 
                 </p>
@@ -39,7 +39,7 @@ export default function About(props: AboutProps) {
                     </div>
                     <div>
                       <h4 className="text-base font-semibold text-center lg:text-start">Web Development</h4>
-                      <p className="text-slate-300">Build and learn about programming or web development.</p>
+                      <p className="dark:text-slate-300">Build and learn about programming or web development.</p>
                     </div>
                   </li>
 
@@ -52,7 +52,7 @@ export default function About(props: AboutProps) {
                     </div>
                     <div>
                       <h4 className="text-base font-semibold text-center lg:text-start">Design</h4>
-                      <p className="text-slate-300">Make high quality designs. Like a professional.</p>
+                      <p className="dark:text-slate-300">Make high quality designs. Like a professional.</p>
                     </div>
                   </li>
 
@@ -64,7 +64,7 @@ export default function About(props: AboutProps) {
                     </div>
                     <div>
                       <h4 className="text-base font-semibold text-center lg:text-start">3D Modeling</h4>
-                      <p className="text-slate-300">Create 3d assets or models for editing and graphic design.</p>
+                      <p className="dark:text-slate-300">Create 3d assets or models for editing and graphic design.</p>
                     </div>
                   </li>
 
@@ -77,7 +77,7 @@ export default function About(props: AboutProps) {
                     </div>
                     <div>
                       <h4 className="text-base font-semibold text-center lg:text-start">Photography</h4>
-                      <p className="text-slate-300">I like photography, even though I&#39;m not an expert in this field.</p>
+                      <p className="dark:text-slate-300">I like photography, even though I&#39;m not an expert in this field.</p>
                     </div>
                   </li>
                 </ul>
@@ -90,7 +90,7 @@ export default function About(props: AboutProps) {
                       {
                         skills.map((skill, index) => {
                           return (
-                              <li key={index} className="mx-auto hover:bg-slate-900 hover:rounded-md lg:p-12 p-6 hover:cursor-pointer hover:ease-in-out hover:duration-300">
+                              <li key={index} className="mx-auto dark:hover:bg-slate-900 hover:bg-slate-200 hover:rounded-md lg:p-12 p-6 hover:cursor-pointer hover:ease-in-out hover:duration-300">
                               <Image 
                                 src={`/img/${skill.image}`}
                                 width="70"
@@ -108,7 +108,7 @@ export default function About(props: AboutProps) {
                 </div>
               </div>
           </section>
-        </article>
+        </main>
       </Layout>
     </div>
   );
