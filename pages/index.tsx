@@ -24,7 +24,7 @@ const Home = (props: HomeProps) => {
                 <br/> <span className="text-gradient font-bold text-2xl ">I&#39;m a Student, Frontend Developer and Content Creator. </span>
                  Welcome to my personal website, where you can find my achievements, projects, and more.
               </p>
-              <div className="text-base font-bold border-2 py-3 px-8 rounded-lg w-40 mt-2 hover:text-slate-700 hover:ease-in-out hover:duration-500 hover:cursor-pointer hover:border-slate-700">
+              <div className="text-base font-bold dark:border-white border-slate-900 border-2 py-3 px-8 rounded-lg w-40 mt-2 hover:text-slate-700 hover:ease-in-out hover:duration-500 hover:cursor-pointer hover:border-slate-700">
                 <Link href="mailto:senogroups@gmail.com"><a>Contact Me</a></Link>
               </div>
             </div>

@@ -10,10 +10,14 @@ export const getBlogs = async () => {
                 node {
                 title
                 excerpt
+                slug
+                createdAt
                 content {
                     html
-                    text
                     json
+                    markdown
+                    raw
+                    text
                 }
                 image {
                     url
@@ -37,6 +41,12 @@ export const getBlogs = async () => {
     const result = await request(graphqlAPI, query);
     return result.blogsConnection.edges;
 };
+
+export const getBlogDetails = async () => {
+    const query = gql`
+
+    `
+}
 
 export const getAuthors = async () => {
     const query = gql`
