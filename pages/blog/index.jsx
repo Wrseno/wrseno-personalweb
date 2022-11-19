@@ -1,7 +1,7 @@
 import React from "react";
-import Layout from "../layout";
-import { getBlogs } from "../services"
-import BlogCard from "../components/BlogCard";
+import Layout from "../../layout";
+import { getBlogs } from "../../services"
+import BlogCard from "../../components/BlogCard";
 import { SearchIcon } from "@heroicons/react/solid";
 
 const Blog = ({ blogs }) => {

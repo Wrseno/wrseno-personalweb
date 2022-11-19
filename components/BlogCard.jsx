@@ -35,8 +35,8 @@ const BlogCard = ({ blog }) => {
           </span>
           <p className="flex items-center gap-2"><MdDateRange/>{ moment(blog.createdAt).format('MMM DD, YYYY') }</p>
           <div className="flex gap-2">
-          {blog.blogCategories.map((category) => (
-              <span className="border-2 border-slate-700 p-2 px-4 text-gradient font-semibold rounded-md mt-4">
+          {blog.blogCategories.map((category, index) => (
+              <span className="border-2 border-slate-700 p-2 px-4 text-gradient font-semibold rounded-md mt-4" key={index}>
                 {category.name}
               </span>
           ))}
