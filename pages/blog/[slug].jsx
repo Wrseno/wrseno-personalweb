@@ -68,6 +68,6 @@ export async function getStaticPaths() {
   const blogs = await getBlogs();
   return {
     paths: blogs.map(({ node: { slug } }) => ({ params: { slug } })),
-    fallback: false,
+    fallback: true,
   }
 }
