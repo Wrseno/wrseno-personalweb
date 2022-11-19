@@ -16,7 +16,7 @@ const Home = (props: HomeProps) => {
     <>
       <Layout pageTitle="Home Page">
        <main id="home_page" className="md:pt-32 pt-24">
-        <section className="container lg:px-36">
+        <section className="container mx-autp">
           <div className="flex flex-wrap">
             <div className="w-full self-center px-4 lg:w-1/2 md:w-1/2">
               <h1 className="font-bold text-3xl lg:text-4xl">Hello, <span className="text-gradient">I&#39;m Seno.</span></h1>

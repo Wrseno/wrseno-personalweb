@@ -16,7 +16,7 @@ export default function Achievement(props: AchievementProps) {
   return (
     <Layout pageTitle="Achievements Page">
         <main id='achievement_page' className='pt-32'>
-          <div className='container lg:px-36'>
+          <div className='container mx-auto'>
             <div className="flex flex-wrap relative">
                 <h1 className='w-full text-3xl font-bold text-center'>Achievements</h1>
                 <div className='w-16 h-1.5 rounded-full bg-primary absolute lg:left-96 lg:top-12 left-24 top-10'></div>
