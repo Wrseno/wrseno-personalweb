@@ -19,7 +19,7 @@ export default function Layout(props: LayoutProps) {
                 <meta name="og:title" content="Warseno Bambang Setyono"/>
               <meta name="og:url" content="https://wrseno.my.id"/>
             <meta name="og:site_name" content="wrseno"/>
-          <link rel="icon" href="/icon_wrseno.png"/>
+          <link rel="icon" href="/wrseno_icon2.png"/>
         </Head>
         <Header/>
             <div>{children}</div>

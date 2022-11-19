@@ -36,15 +36,15 @@ export default function Header() {
   const renderThemeChanger = () => {
     if (!mounted) return null;
     
-    const currentTheme = theme;
+    const currentTheme = theme === "system" ? systemTheme : theme;
 
     if (currentTheme === "dark") {
       return (
-        <SunIcon className="lg:ml-4 w-8 h-8 bg-slate-400 dark:bg-slate-800 rounded-md text-yellow-500" role="button" onClick={ () => setTheme("light") } />
+        <SunIcon className="lg:ml-4 w-8 h-8 bg-slate-500 rounded-md text-yellow-500" role="button" onClick={ () => setTheme("light") } />
       )
     } else {
       return (
-        <MoonIcon className="lg:ml-4 w-8 h-8 bg-slate-400 dark:bg-slate-800 rounded-md text-gray-900" role="button" onClick={ () => setTheme("dark") } />
+        <MoonIcon className="lg:ml-4 w-8 h-8 bg-slate-500 rounded-md text-gray-900" role="button" onClick={ () => setTheme("dark") } />
       )
     }
   };
@@ -52,11 +52,11 @@ export default function Header() {
 
   return (
     <>
-      <header className="flex navbar-fixed top-0 left-0 w-full items-center z-10 dark:bg-black bg-opacity-70">
+      <header className="flex navbar-fixed top-0 left-0 w-full items-center z-10 dark:bg-opacity-70 dark:bg-black bg-opacity-70">
         <div className="container lg:px-36">
           <div className="flex justify-between relative">
             <div className="px-4">
-              <Link href="/" ><a className="font-bold text-2xl block py-6">wrseno <span className="text-primary">•</span></a></Link>
+              <Link href="/" ><a className="font-bold text-2xl block py-6 relative">wrseno <span className="text-gradient text-5xl absolute top-3.5">⪤</span></a></Link>
             </div>
             <div className="flex items-center px-4">
               <button id={hamburger} name="hamburger" type="button" className="block absolute right-4 lg:hidden" onClick={updateMenu}>

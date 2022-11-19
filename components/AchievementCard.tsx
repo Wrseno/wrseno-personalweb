@@ -19,7 +19,7 @@ export default function AchievementCard (props: AchievementCardProps)  {
     return (
         <div>
             <div className="grid lg:grid-cols-3 mb-12 relative">
-                <h1 className={`text-slate-900 text-4xl font-semibold my-auto mx-auto mb-4 ${layout ? "absolute right-10" : ""} hidden lg:block`}>{ach.date}</h1>
+                <h1 className={`text-gradient text-4xl font-bold my-auto mx-auto mb-4 ${layout ? "absolute right-10" : ""} hidden lg:block`}>{ach.date}</h1>
                 <Image src={`/img/${ach.image}`}
                 width="384px"
                 height="224px"

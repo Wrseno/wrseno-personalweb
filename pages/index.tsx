@@ -19,12 +19,12 @@ const Home = (props: HomeProps) => {
         <section className="container lg:px-36">
           <div className="flex flex-wrap">
             <div className="w-full self-center px-4 lg:w-1/2 md:w-1/2">
-              <h1 className="text-base font-bold md:text-xl lg:text-4xl">Hello, <span className="text-gradient">I&#39;m Seno.</span></h1>
+              <h1 className="font-bold text-3xl lg:text-4xl">Hello, <span className="text-gradient">I&#39;m Seno.</span></h1>
               <p className="font-semibold my-4">My full name is Warseno Bambang Setyono. 
-                <br/> <span className="text-gradient font-bold text-2xl ">I&#39;m a Student, Frontend Developer and Content Creator. </span>
+                 <span className="text-gradient font-bold text-2xl lg:block"> I&#39;m a Student, Frontend Developer and Content Creator. </span>
                  Welcome to my personal website, where you can find my achievements, projects, and more.
               </p>
-              <div className="text-base font-bold dark:border-white border-slate-900 border-2 py-3 px-8 rounded-lg w-40 mt-2 hover:text-slate-700 hover:ease-in-out hover:duration-500 hover:cursor-pointer hover:border-slate-700">
+              <div className="text-base font-bold border-black dark:border-white dark:hover:border-slate-700 border-2 py-3 px-8 rounded-lg w-40 mt-2 hover:text-slate-700  hover:ease-in-out hover:duration-500 hover:cursor-pointer hover:border-slate-700">
                 <Link href="mailto:senogroups@gmail.com"><a>Contact Me</a></Link>
               </div>
             </div>
@@ -32,19 +32,25 @@ const Home = (props: HomeProps) => {
             <div className="w-full self-end px-4 lg:w-1/2 md:w-1/2">
               <div className="relative mt-10">
                 <Image 
-                src="/img/warseno-removebg.png"
-                alt="Warseno Bambang Setyono"
-                width="400"
-                height="300"
-                className="max-w-full mx-auto"
-                placeholder="blur"
-                blurDataURL="/img/warseno-removebg.png"
-                />
-                <span className="absolute -bottom-8 -z-10 left-1/2 -translate-x-1/2">
-                  <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width={400} height={400}>
-                    <path fill="#ad081b" d="M29.9,-49.3C40.2,-39.9,50.9,-34,61.1,-24.2C71.4,-14.4,81.1,-0.7,79.4,11.5C77.8,23.6,64.7,34.2,53.2,44.2C41.6,54.2,31.5,63.6,19.2,68.9C6.8,74.2,-7.8,75.4,-22.7,73C-37.6,70.6,-52.7,64.7,-59.4,53.4C-66.1,42.2,-64.4,25.6,-66.1,9.9C-67.8,-5.9,-72.8,-20.7,-68.2,-31.3C-63.6,-41.9,-49.3,-48.2,-36.3,-56.3C-23.3,-64.4,-11.7,-74.3,-0.9,-72.9C9.8,-71.4,19.6,-58.6,29.9,-49.3Z" transform="translate(100 100) scale(1.1)" />
+                  src="/img/warseno-removebg.png"
+                    alt="Warseno Bambang Setyono"
+                      width="400"
+                        height="300"
+                      className="max-w-full mx-auto"
+                    placeholder="blur"
+                  blurDataURL="/img/warseno-removebg.png"
+                />       
+                <span className="absolute -bottom-16 -z-10 lg:left-40 left-28 -translate-x-1/2">
+                  <svg id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width={500} height={500}>                    
+                    <defs>                         
+                      <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">                            
+                        <stop id="stop1" stop-color="rgba(232, 5, 2, 1)" offset="0%"></stop>                            
+                        <stop id="stop2" stop-color="rgba(251, 22, 184, 1)" offset="100%"></stop>                        
+                      </linearGradient>                    
+                    </defs>                
+                    <path fill="url(#sw-gradient)" d="M21.1,-22.6C29.1,-18.4,38.5,-13.4,41.5,-5.9C44.5,1.6,41.1,11.7,35.1,18.5C29,25.2,20.4,28.7,11.9,31.2C3.4,33.7,-5,35.2,-11.1,32.3C-17.3,29.3,-21.2,21.9,-23.3,15C-25.4,8.1,-25.7,1.8,-24.1,-3.7C-22.5,-9.2,-18.9,-13.7,-14.6,-18.6C-10.2,-23.4,-5.1,-28.5,0.7,-29.3C6.5,-30.2,13.1,-26.8,21.1,-22.6Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0"></path>              
                   </svg>
-                </span>
+                </span>     
               </div>
             </div>
 

@@ -42,10 +42,37 @@ export const getBlogs = async () => {
     return result.blogsConnection.edges;
 };
 
-export const getBlogDetails = async () => {
+export const getBlogDetails = async (slug) => {
     const query = gql`
-
-    `
+    query getBlogDetails($slug: String!) {
+        blogs(where: {slug: $slug}) {
+            title
+            excerpt
+            slug
+            createdAt
+            content {
+                raw
+                html
+                markdown
+            }
+            image {
+                url
+            }
+            author {
+                name
+                photo {
+                url
+                }
+            }
+            blogCategories {
+                name
+                slug
+            }
+        }
+    }     
+    `;
+    const result = await request(graphqlAPI, query, { slug });
+    return result.blogs;
 }
 
 export const getAuthors = async () => {
