@@ -40,8 +40,8 @@ const Home = (props: HomeProps) => {
                     placeholder="blur"
                   blurDataURL="/img/warseno-removebg.png"
                 />       
-                <span className="absolute -bottom-16 -z-10 lg:left-40 left-28 -translate-x-1/2">
-                  <svg id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width={500} height={500}>                    
+                <span className="absolute mx-auto -bottom-0 lg:-bottom-16 -z-10 lg:left-40 left-28 -translate-x-1/2 w-full">
+                  <svg id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">                    
                     <defs>                         
                       <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">                            
                         <stop id="stop1" stop-color="rgba(232, 5, 2, 1)" offset="0%"></stop>                            

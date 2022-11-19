@@ -7,19 +7,18 @@ import { MdDateRange } from "react-icons/md";
 const BlogCard = ({ blog }) => {
   return (
       <Link href={`/blog/${blog.slug}`}>   
-        <a className="lg:p-4">       
+        <a className="dark:hover:text-slate-500 hover:text-slate-700 duration-300 hover:ease-linear">       
           <Image 
             unoptimized
               height={300} 
                 width={500}
                   src={blog.image.url} 
-                  className="rounded-md"
+                  className="rounded-md hover:scale-105 hover:rounded-md duration-300"
                 alt={blog.title} 
               placeholder="blur"
             blurDataURL={blog.image.url}
           />
           <h1 className="text-2xl font-bold">{blog.title}</h1>
-          <p>{blog.excerpt}</p>
           <span className="flex items-center gap-2 mt-2">
             <Image
               unoptimized

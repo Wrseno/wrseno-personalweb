@@ -24,7 +24,7 @@ export default function AchievementCard (props: AchievementCardProps)  {
                 width="384px"
                 height="224px"
                 alt="achievement"
-                className="rounded-lg mx-auto"
+                className="rounded-lg mx-auto hover:scale-105 duration-300 hover:cursor-pointer hover:rounded-lg"
                 placeholder="blur"
                 blurDataURL={`/img/${ach.image}`}
                 />
