@@ -31,8 +31,8 @@ export default function Achievement(props: AchievementProps) {
                 </div>
 
                 <div className="w-full">
-                  <h1 className="lg:text-3xl font-bold text-center my-8">Certificate</h1>
-                  <ul className="grid grid-cols-2 lg:grid-cols-3 gap-6">
+                  <h1 className="text-3xl font-bold text-center my-8">Certificate</h1>
+                  <ul className="grid md:grid-cols-3 md:gap-4 lg:grid-cols-3 lg:gap-6">
                     {certificate.map((cert, index)=>{
                         return (
                           <li key={index} className="mx-auto mb-8 hover:cursor-pointer border-2 border-slate-300 rounded-lg bg-slate-300">

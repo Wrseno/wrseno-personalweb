@@ -56,12 +56,12 @@ export default function Header() {
         <div className="container mx-auto max-w-screen-lg">
           <div className="flex justify-between relative">
             <div className="px-4">
-              <Link href="/" ><a className="font-bold text-2xl block py-6 relative">wrseno <span className="text-gradient text-5xl absolute top-3.5">⪤</span></a></Link>
+              <Link href="/" ><a className="font-bold text-2xl block py-6 relative">wrseno <span className="text-gradient text-5xl absolute lg:top-3.5 top-3">⪤</span></a></Link>
             </div>
             <div className="flex items-center px-4">
               <button id={hamburger} name="hamburger" type="button" className="block absolute right-4 lg:hidden" onClick={updateMenu}>
                 <span className="hamburger-line transition duration-300 ease-in-out origin-top-left dark:bg-white bg-black"></span>
-                <span className="hamburger-line transition duration-300 ease-in-out origin-bottom-left dark:bg-white bg-black"></span>
+                <span className="hamburger-line-2 transition duration-300 ease-in-out dark:bg-white bg-black"></span>
                 <span className="hamburger-line transition duration-300 ease-in-out origin-bottom-left dark:bg-white bg-black"></span>
               </button>
 

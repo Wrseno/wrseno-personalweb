@@ -22,8 +22,8 @@ const BlogDetails = ({ blog }) => {
                   className="rounded-lg"
                 blurDataURL={blog.image.url}
               />
-              <h1 className="text-4xl font-bold my-4">{blog.title}</h1>
-              <div className="flex gap-2">
+              <h1 className="md:text-4xl text-2xl font-bold my-4">{blog.title}</h1>
+              <div className="md:flex gap-2">
                 <span className="flex gap-2">
                   <Image
                     src={blog.author.photo.url}

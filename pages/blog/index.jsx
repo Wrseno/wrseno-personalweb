@@ -29,7 +29,7 @@ const Blog = ({ blogs }) => {
           </div>
         </section>
         <section className="container mx-auto max-w-screen-lg grid w-full">
-          <div className="grid lg:grid-cols-2 my-4 mx-auto">
+          <div className="grid md:grid-cols-2 mx-auto gap-8">
             {
               blogs.filter((blog) => {
                 if (query == "") {
@@ -39,7 +39,7 @@ const Blog = ({ blogs }) => {
                 }
                 }).map((blog, index) => {
                   return (
-                    <div key={index}>
+                    <div key={index} className="my-4">
                       <Link href={`blog/${blog.node.slug}`}>
                         <BlogCard blog={blog.node} key={index}/>
                       </Link>
