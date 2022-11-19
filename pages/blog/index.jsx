@@ -9,7 +9,7 @@ const Blog = ({ blogs }) => {
   return (
     <Layout pageTitle="Blog">
       <main className="md:pt-32 pt-24">
-        <section className="container mx-auto">
+        <section className="container mx-auto max-w-screen-lg">
           <div className="flex flex-wrap relative">
             <h1 className='w-full text-3xl font-bold text-center'>Blog</h1>
                 <div className='w-16 h-1.5 rounded-full bg-primary absolute lg:left-96 lg:top-12 left-24 top-10'></div>
@@ -19,7 +19,7 @@ const Blog = ({ blogs }) => {
                 </div>
           </div>
         </section>
-        <section className="container mx-auto lg:px-36 grid w-full">
+        <section className="container mx-auto max-w-screen-lg grid w-full">
           <div className="grid lg:grid-cols-2 mx-auto">
             {blogs.map((blog, index) => (<BlogCard blog={blog.node} key={index}/>))}
           </div>

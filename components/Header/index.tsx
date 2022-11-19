@@ -53,7 +53,7 @@ export default function Header() {
   return (
     <>
       <header className="flex navbar-fixed top-0 left-0 w-full items-center z-10 dark:bg-opacity-70 dark:bg-black bg-opacity-70">
-        <div className="container mx-auto">
+        <div className="container mx-auto max-w-screen-lg">
           <div className="flex justify-between relative">
             <div className="px-4">
               <Link href="/" ><a className="font-bold text-2xl block py-6 relative">wrseno <span className="text-gradient text-5xl absolute top-3.5">⪤</span></a></Link>

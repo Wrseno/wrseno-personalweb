@@ -15,7 +15,7 @@ export default function About(props: AboutProps) {
     <div>
       <Layout pageTitle="About Page">
         <main id="about_page" className="pt-32">
-          <section className="container mx-auto">
+          <section className="container mx-auto max-w-screen-lg">
             
             <AboutCard/>
 

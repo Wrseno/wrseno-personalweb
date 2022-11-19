@@ -10,8 +10,8 @@ const BlogDetails = ({ blog }) => {
   return (
     <Layout pageTitle="Blog">
         <main className="md:pt-32 pt-24">
-          <section className="container lg:px-36">
-            <div className="">
+          <section className="container mx-auto max-w-screen-lg">
+            <div>
               <Image
                 src={blog.image.url}
                   width={1000}
