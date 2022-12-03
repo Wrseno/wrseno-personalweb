@@ -15,7 +15,7 @@ const Home = (props: HomeProps) => {
   return (
     <>
       <Layout pageTitle="Home Page">
-       <main id="home_page" className="md:pt-32 pt-24">
+       <main id="home_page" className="pt-32">
         <section className="container mx-auto max-w-screen-lg">
           <div className="flex flex-wrap">
             <div className="w-full self-center px-4 lg:w-1/2 md:w-1/2">

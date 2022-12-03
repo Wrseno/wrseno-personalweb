@@ -32,20 +32,22 @@ export default function Achievement(props: AchievementProps) {
 
                 <div className="w-full">
                   <h1 className="text-3xl font-bold text-center my-8">Certificate</h1>
-                  <ul className="grid md:grid-cols-3 md:gap-4 lg:grid-cols-3 lg:gap-6">
+                  <ul className="grid md:grid-cols-3 md:gap-4 lg:grid-cols-3 lg:gap-6 mb-4">
                     {certificate.map((cert, index)=>{
                         return (
-                          <li key={index} className="w-full backdrop-blur-lg mx-auto mb-8 p-2 hover:cursor-pointer border-2 border-slate-300 rounded-lg dark:shadow-slate-300 shadow-md">
-                            <Image
-                              src={`/img/${cert.image}`}
-                                width='400'
-                                  height='300'
-                                    alt="certificate"
-                                  placeholder="blur"
-                                blurDataURL={`/img/${cert.image}`}
-                              className="hover:scale-105 duration-300"
-                            />
-                            <p className="text-base text-center py-2 font-semibold">{cert.title} <br /> {cert.course} <a href={cert.url} className="hover:text-slate-500 font-bold">Detail</a></p>
+                          <li key={index} className="p-2 hover:cursor-pointer rounded-lg border-gradient my-4 md:my-0">
+                            <div className="gradient-content w-full">
+                              <Image
+                                src={`/img/${cert.image}`}
+                                  width='400'
+                                    height='300'
+                                      alt="certificate"
+                                    placeholder="blur"
+                                  blurDataURL={`/img/${cert.image}`}
+                                className="hover:scale-105 duration-300"
+                              />
+                              <p className="text-base text-center p-4 font-semibold">{cert.title} <br /> {cert.course} <a href={cert.url} className="hover:text-slate-500 font-bold">Detail</a></p>
+                            </div>
                           </li>
                         )
                       })}
