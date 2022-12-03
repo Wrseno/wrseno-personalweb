@@ -65,33 +65,6 @@ const Home = (props: HomeProps) => {
               </ul>
             </div>
 
-            <div className="mx-auto my-2 lg:my-12 animate-bounce md:hidden lg:block">
-              <a href="#download-cv" className="flex items-center text-xl gap-4 text-slate-800">
-                Download CV
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1e293b" className="bi bi-caret-down-square" viewBox="0 0 16 16">
-                  <path d="M3.626 6.832A.5.5 0 0 1 4 6h8a.5.5 0 0 1 .374.832l-4 4.5a.5.5 0 0 1-.748 0l-4-4.5z"/>
-                  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2z"/>
-                </svg>
-              </a>
-            </div>
-            
-            <div className="w-full my-72 lg:my-52 md:my-24">
-
-              <p className="lg:text-2xl lg:px-60 text-center font-semibold md:px-44">If you are <span className="text-gradient">interested</span>, please contact me via the <span className="text-gradient">Contact Me</span> button. 
-              Or check <span className="text-gradient">my CV</span> first</p>
-              
-              <div className="lg:flex md:flex mx-auto">
-                <div className="text-black border-black mx-auto lg:mr-6 md:mr-6 text-base text-center font-semibold border-2 py-3 rounded-lg w-52 mt-8 bg-gradient hover:text-white hover:font-bold hover:ease-in-out hover:duration-300 hover:cursor-pointer hover:border-white">
-                  <Link href="achievement"><a>See Achievements</a></Link>
-                </div>
-
-                <div id="download-cv" className="text-black border-black mx-auto lg:ml-6 md:ml-6 text-base text-center font-semibold border-2 py-3 rounded-lg w-52 mt-8 bg-gradient hover:text-white hover:font-bold hover:ease-in-out hover:duration-300 hover:cursor-pointer hover:border-white">
-                  <Link href="#"><a>Download CV</a></Link>
-                </div>
-              </div>
-
-            </div>
-
           </div>
         </section>
        </main>

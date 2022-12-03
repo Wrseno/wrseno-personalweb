@@ -35,17 +35,17 @@ export default function Achievement(props: AchievementProps) {
                   <ul className="grid md:grid-cols-3 md:gap-4 lg:grid-cols-3 lg:gap-6">
                     {certificate.map((cert, index)=>{
                         return (
-                          <li key={index} className="mx-auto mb-8 hover:cursor-pointer border-2 border-slate-300 rounded-lg bg-slate-300">
+                          <li key={index} className="w-full backdrop-blur-lg mx-auto mb-8 p-2 hover:cursor-pointer border-2 border-slate-300 rounded-lg dark:shadow-slate-300 shadow-md">
                             <Image
                               src={`/img/${cert.image}`}
-                                width='300'
-                                  height='200'
+                                width='400'
+                                  height='300'
                                     alt="certificate"
                                   placeholder="blur"
                                 blurDataURL={`/img/${cert.image}`}
                               className="hover:scale-105 duration-300"
                             />
-                            <p className="text-base text-center py-2 text-black font-semibold">{cert.title} <br /> {cert.course} <a href={cert.url} className="hover:text-slate-500 font-bold">Detail</a></p>
+                            <p className="text-base text-center py-2 font-semibold">{cert.title} <br /> {cert.course} <a href={cert.url} className="hover:text-slate-500 font-bold">Detail</a></p>
                           </li>
                         )
                       })}

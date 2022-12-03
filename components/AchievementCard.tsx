@@ -17,7 +17,7 @@ export default function AchievementCard (props: AchievementCardProps)  {
     const {layout, ach} = props;
 
     return (
-        <div>
+        <div className="dark:border-slate-300 border-2 dark:shadow-slate-300 shadow-md p-2 md:p-0 md:shadow-none md:border-none rounded-lg mb-14">
             <div className="grid lg:grid-cols-3 md:grid-cols-2 md:gap-4 mb-12 relative">
                 <h1 className={`text-gradient text-4xl font-bold my-auto mx-auto mb-4 ${layout ? "absolute right-10" : ""} hidden lg:block`}>{ach.date}</h1>
                 <Image src={`/img/${ach.image}`}
@@ -28,7 +28,7 @@ export default function AchievementCard (props: AchievementCardProps)  {
                 placeholder="blur"
                 blurDataURL={`/img/${ach.image}`}
                 />
-                <div className="description my-auto lg:mx-4">
+                <div className="description my-auto lg:mx-4 px-2">
                     <h1 className="font-bold text-xl dark:text-slate-300 my-2">{ach.title}</h1>
                     <p className="text-base dark:text-slate-300">{ach.desc}</p>
                 </div>

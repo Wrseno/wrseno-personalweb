@@ -16,7 +16,7 @@ module.exports = {
         secondary: 'rgb(220 38 38)',
       },
       dropShadow: {
-        '3xl': '0 5px 5px rgba(255, 255, 255, 0.25)',
+        '3xl': '0 3px 3px rgba(255, 255, 255, 1)',
       },
       screens: {
         '2xl': '1320px',

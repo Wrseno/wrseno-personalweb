@@ -23,20 +23,20 @@ export default function ProjectsCard (props: ProjectCardProps) {
 
   return (
     <>
-    <div className="flex flex-col mb-4 bg-opacity-0 shadow-lg rounded-xl md:flex-row md:mb-8  md:rounded-none md:shadow-none">
-        <div className={`drop-shadow-3xl pt-0 w-full md:pt-2 md:w-2/5 
+    <div className="flex flex-col mb-14 p-2 bg-opacity-0 dark:shadow-slate-300 shadow-md rounded-xl md:flex-row md:mb-8  md:rounded-none md:shadow-none dark:md:shadow-none">
+        <div className={`pt-0 w-full md:pt-2 md:w-2/5 
         ${ layout ? "order-1 md:order-2" : "" }`}>
             <Image 
                 src={`/img/${project.image}`}
-                alt="projects" 
-                width="500px"
-                height="270px"
-                className="rounded-lg hover:scale-105 duration-300 hover:cursor-pointer hover:rounded-lg"
-                placeholder="blur"
+                    alt="projects" 
+                        width="500px"
+                            height="270px"
+                        className=" rounded-lg hover:scale-105 duration-300 hover:cursor-pointer hover:rounded-lg"
+                    placeholder="blur"
                 blurDataURL={`/img/${project.image}`}
             />
         </div>
-        <div className={`w-full flex flex-col text-center justofy-between p-4 
+        <div className={`w-full flex flex-col text-center justify-between p-4 
         ${ layout ? "order-2 md:order-1 md:pr-8" : "md:pl-8" } md:w-3/5 md:text-left md:p-0 md:pb-2 `}>
             <div>
                 <h2 className="text-2xl font-bold md:text-3xl">{project.title}</h2>
@@ -44,7 +44,6 @@ export default function ProjectsCard (props: ProjectCardProps) {
                 <ul className="flex mt-4 justify-center md:justify-start">
                     {
                         project.category.map((item, index) => {
-
                             return (
                                 <li key={index} className="mx-1 md:mx-0 md:mr-2 grid">
                                     <div className={`bg-primary text-white py-2 px-4 mr-2 rounded-md font-bold}`}>

@@ -19,10 +19,10 @@ export default function About(props: AboutProps) {
             
             <AboutCard/>
 
-              <div className="w-full self-center px-8 ">
+              <div className="w-full self-center">
                 <h1 className="text-lg font-bold lg:my-8 mt-12 lg:text-xl">What I Learned</h1>
                 <div>
-                      <ul className="grid lg:grid-cols-4 md:grid-cols-4 lg:gap-8 grid-cols-2 lg:mb-4">
+                      <ul className="grid lg:grid-cols-4 md:grid-cols-4 lg:gap-8 grid-cols-3 lg:mb-4">
                       {
                         skills.map((skill, index) => {
                           return (
