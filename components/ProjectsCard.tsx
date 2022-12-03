@@ -23,7 +23,7 @@ export default function ProjectsCard (props: ProjectCardProps) {
 
   return (
     <>
-        <div className="border-gradient p-2 my-4 rounded-xl">
+        <div className="border-gradient p-1 my-4 rounded-xl">
             <div className={`flex flex-col md:p-4 md:px-6 rounded-xl md:flex-row gradient-content`}>
                 <div className={`pt-0 w-full md:pt-2 md:w-2/5 
                 ${ layout ? "order-1 md:order-2" : "" }`}>

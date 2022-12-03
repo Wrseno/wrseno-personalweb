@@ -19,7 +19,7 @@ const AboutCard = () => {
     <div className="w-full self-center my-8">
         <h1 className="text-lg font-bold mb-4 lg:text-xl">What I&#39;m Doing</h1>
             <ul className="grid lg:grid-cols-2 md:grid-cols-2">
-                <li  className="p-2 border-gradient rounded-lg my-2 mx-2">
+                <li  className="p-1 border-gradient rounded-lg my-2 mx-2">
                     <div className="gradient-content lg:flex justify-start items-start gap-5 rounded-lg p-6">
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="rgb(220 38 38)" className="mx-auto lg:my-4" viewBox="0 0 16 16">
@@ -34,7 +34,7 @@ const AboutCard = () => {
                     </div>
                 </li>
 
-                <li  className="p-2 border-gradient rounded-lg my-2 mx-2">
+                <li  className="p-1 border-gradient rounded-lg my-2 mx-2">
                     <div className="gradient-content lg:flex justify-start items-start gap-5 rounded-lg p-6">
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="rgb(220 38 38)" className="mx-auto lg:my-4"viewBox="0 0 16 16">
@@ -50,7 +50,7 @@ const AboutCard = () => {
                     </div>
                 </li>
 
-                <li  className="p-2 border-gradient rounded-lg my-2 mx-2">
+                <li  className="p-1 border-gradient rounded-lg my-2 mx-2">
                     <div className="gradient-content lg:flex justify-start items-start gap-5 rounded-lg p-6">
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="rgb(220 38 38)" className="mx-auto lg:my-4" viewBox="0 0 16 16">
@@ -65,7 +65,7 @@ const AboutCard = () => {
                     </div>
                 </li>
 
-                <li  className="p-2 border-gradient rounded-lg my-2 mx-2">
+                <li  className="p-1 border-gradient rounded-lg my-2 mx-2">
                     <div className="gradient-content lg:flex justify-start items-start gap-5 rounded-lg p-6">
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="rgb(220 38 38)" className="mx-auto lg:my-4" viewBox="0 0 16 16">

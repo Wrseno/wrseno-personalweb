@@ -35,7 +35,7 @@ export default function Achievement(props: AchievementProps) {
                   <ul className="grid md:grid-cols-3 md:gap-4 lg:grid-cols-3 lg:gap-6 mb-4">
                     {certificate.map((cert, index)=>{
                         return (
-                          <li key={index} className="p-2 hover:cursor-pointer rounded-lg border-gradient my-4 md:my-0">
+                          <li key={index} className="p-1 hover:cursor-pointer rounded-lg border-gradient my-4 md:my-0">
                             <div className="gradient-content w-full">
                               <Image
                                 src={`/img/${cert.image}`}

@@ -9,6 +9,8 @@ const GuestBook = () => {
         url: "https://wrseno.my.id/guestbook"
     }
 
+    
+
   return (
     <Layout pageTitle="Guestbook Page">
         <main id="guestbook_page" className="pt-32">

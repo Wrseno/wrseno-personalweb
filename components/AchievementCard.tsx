@@ -17,7 +17,7 @@ export default function AchievementCard (props: AchievementCardProps)  {
     const {layout, ach} = props;
 
     return (
-        <div className="border-gradient p-2 md:p-0 rounded-lg mb-14">
+        <div className="border-gradient p-1 md:p-0 rounded-lg mb-14">
             <div className="gradient-content grid lg:grid-cols-3 md:grid-cols-2 relative">
                 <h1 className={`text-gradient text-4xl font-bold my-auto mx-auto mb-4 ${layout ? "absolute right-10" : ""} hidden lg:block`}>{ach.date}</h1>
                 <Image src={`/img/${ach.image}`}
