@@ -3,6 +3,8 @@ import Link from "next/link";
 import Social from "../components/Social";
 import socialsJSON from "../data/socials.json";
 import Image from "next/image";
+import Particles from "../components/particles";
+import Glass from "../components/glass";
 
 interface HomeProps {
   socials: Array<any>;
@@ -15,7 +17,7 @@ const Home = (props: HomeProps) => {
   return (
     <>
       <Layout pageTitle="Home Page">
-       <main id="home_page" className="pt-32">
+       <main id="home_page" className="md:pt-32 pt-24">
         <section className="container mx-auto max-w-screen-lg">
           <div className="flex flex-wrap">
             <div className="w-full self-center px-4 lg:w-1/2 md:w-1/2">
@@ -36,7 +38,7 @@ const Home = (props: HomeProps) => {
                     alt="Warseno Bambang Setyono"
                       width="400"
                         height="300"
-                      className="max-w-full mx-auto"
+                      className="max-w-full mx-auto z-10"
                     placeholder="blur"
                   blurDataURL="/img/warseno-removebg.png"
                 />       
@@ -50,7 +52,9 @@ const Home = (props: HomeProps) => {
                     </defs>                
                     <path fill="url(#sw-gradient)" d="M21.1,-22.6C29.1,-18.4,38.5,-13.4,41.5,-5.9C44.5,1.6,41.1,11.7,35.1,18.5C29,25.2,20.4,28.7,11.9,31.2C3.4,33.7,-5,35.2,-11.1,32.3C-17.3,29.3,-21.2,21.9,-23.3,15C-25.4,8.1,-25.7,1.8,-24.1,-3.7C-22.5,-9.2,-18.9,-13.7,-14.6,-18.6C-10.2,-23.4,-5.1,-28.5,0.7,-29.3C6.5,-30.2,13.1,-26.8,21.1,-22.6Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0"></path>              
                   </svg>
-                </span>     
+                </span>    
+                <Glass/>
+                <Particles/>
               </div>
             </div>
 
