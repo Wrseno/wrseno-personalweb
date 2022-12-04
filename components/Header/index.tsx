@@ -56,7 +56,7 @@ export default function Header() {
         <div className="container mx-auto max-w-screen-lg">
           <div className="flex justify-between relative">
             <div className="px-4">
-              <Link href="/" ><a className="font-bold text-2xl block py-6 relative">wrseno <span className="text-gradient md:text-5xl text-3xl absolute lg:top-3.5 top-5">⪤</span></a></Link>
+              <Link href="/" ><a className="font-bold text-2xl block py-6 relative">wrseno <span className="text-gradient md:text-5xl text-3xl absolute lg:top-3.5 top-8">⪤</span></a></Link>
             </div>
             <div className="flex items-center px-4">
               <button id={hamburger} name="hamburger" type="button" className="block absolute right-4 lg:hidden" onClick={updateMenu}>
