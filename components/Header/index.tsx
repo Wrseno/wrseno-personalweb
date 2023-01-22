@@ -60,13 +60,13 @@ export default function Header() {
             </div>
             <div className="flex items-center px-4">
               <button id={hamburger} name="hamburger" type="button" className="block absolute right-4 lg:hidden" onClick={updateMenu}>
-                <span className="hamburger-line transition duration-300 ease-in-out origin-top-left dark:bg-white bg-black"></span>
-                <span className="hamburger-line-2 transition duration-300 ease-in-out dark:bg-white bg-black"></span>
-                <span className="hamburger-line transition duration-300 ease-in-out origin-bottom-left dark:bg-white bg-black"></span>
+                <span className="hamburger-line transition duration-300 ease-in-out origin-top-left bg-black"></span>
+                <span className="hamburger-line-2 transition duration-300 ease-in-out bg-black"></span>
+                <span className="hamburger-line transition duration-300 ease-in-out origin-bottom-left bg-black"></span>
               </button>
 
-              <nav id={menu_class} className="hidden absolute py-5 dark:bg-black bg-white dark:bg-opacity-90 bg-opacity-90 font-semibold
-               shadow-lg rounded-lg w-full right-0 top-full dark:text-white lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+              <nav id={menu_class} className="hidden absolute py-5 bg-white dark:bg-opacity-90 bg-opacity-90 font-semibold
+               shadow-lg rounded-lg w-full right-0 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
                 <ul className="block lg:flex items-center">
                   <li className="group"><Link href="/about"><a className={`${asPath === "/about" ? "font-bold border-b-4 border-primary" : "dark:text-slate-400 text-slate-600"} text-base text-dark py-2 mx-8 lg:mx-4 group-hover:text-black dark:group-hover:text-white group-hover:ease-in-out group-hover:duration-300 flex lg:text-lg lg:font-semibold`}>About</a></Link></li>
                   <li className="group"><Link href="/guestbook"><a className={`${asPath === "/guestbook" ? "font-bold border-b-4 border-primary" : "dark:text-slate-400 text-slate-600"} text-base text-dark py-2 mx-8 lg:mx-4 group-hover:text-black dark:group-hover:text-white group-hover:ease-in-out group-hover:duration-300 flex lg:text-lg lg:font-semibold`}>Guestbook</a></Link></li>

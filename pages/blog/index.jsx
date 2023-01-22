@@ -9,6 +9,7 @@ const Blog = ({ blogs }) => {
 
   const [query, setQuery] = useState("");
 
+
   return (
     <Layout pageTitle="Blog">
       <main className="md:pt-32 pt-24">
@@ -34,14 +35,14 @@ const Blog = ({ blogs }) => {
               blogs.filter((blog) => {
                 if (query == "") {
                   return blog;
-                } else if (blog.node.title.toLowerCase().includes(query.toLowerCase())) {
+                } else if (blog.fields.title.toLowerCase().includes(query.toLowerCase())) {
                   return blog;
                 }
                 }).map((blog, index) => {
                   return (
                     <div key={index} className="my-4">
-                      <Link href={`blog/${blog.node.slug}`}>
-                        <BlogCard blog={blog.node} key={index}/>
+                      <Link href={`blog/${blog.fields.slug}`}>
+                        <BlogCard blog={blog.fields} key={index}/>
                       </Link>
                     </div>
                   )
@@ -56,10 +57,20 @@ const Blog = ({ blogs }) => {
 
 export default Blog;
 
-export async function getStaticProps() {
-    const blogs = await getBlogs();
+let client = require('contentful').createClient({
+  space: process.env.NEXT_CONTENTFUL_SPACE_ID,
+  accessToken: process.env.NEXT_CONTENTFUL_ACCESS_TOKEN,
+});
 
-    return {
-        props: { blogs },
-    };
-}
+export async function getStaticProps() {
+
+  let data = await client.getEntries({
+    content_type: 'post'
+  })
+
+  return {
+    props: {
+      blogs: data.items,
+    }
+  }
+};
