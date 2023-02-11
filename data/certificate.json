@@ -1,32 +1,32 @@
 [
-    {
-        "image": "dasar.jpg",
-        "title": "Learn Basic Web Programming.",
-        "course": "Dicoding 2022",
-        "url": "https://www.dicoding.com/certificates/53XE0ON29XRN"
-    },
-    {
-        "image": "js.jpg",
-        "title": "Learn Basic Javascript Programming.",
-        "course": "Dicoding 2022",
-        "url": "https://www.dicoding.com/certificates/JLX1GNLK6Z72"
-    },
-    {
-        "image": "frontend.jpg",
-        "title": "Learn Frontend Web for Beginners.",
-        "course": "Dicoding 2022",
-        "url": "https://www.dicoding.com/certificates/JLX1G78YJZ72"
-    },
-    {
-        "image": "sertifikat-backend.jpg",
-        "title": "Learn to Create Backend for Beginners.",
-        "course": "Dicoding 2022",
-        "url": "https://www.dicoding.com/certificates/0LZ0G6O3QX65"
-    },
-    {
-        "image": "js-sololearn.jpg",
-        "title": "Learn Basic Javascript Programming.",
-        "course": "Sololearn 2022",
-        "url": "https://www.sololearn.com/Certificate/CT-AIOSN1MX/png"
-    }
+  {
+    "image": "dasar.jpg",
+    "title": "Learn Basic Web Programming.",
+    "course": "Dicoding 2022",
+    "url": "https://www.dicoding.com/certificates/53XE0ON29XRN"
+  },
+  {
+    "image": "js.jpg",
+    "title": "Learn Basic Javascript Programming.",
+    "course": "Dicoding 2022",
+    "url": "https://www.dicoding.com/certificates/JLX1GNLK6Z72"
+  },
+  {
+    "image": "frontend.jpg",
+    "title": "Learn Frontend Web for Beginners.",
+    "course": "Dicoding 2022",
+    "url": "https://www.dicoding.com/certificates/JLX1G78YJZ72"
+  },
+  {
+    "image": "sertifikat-backend.jpg",
+    "title": "Learn to Create Backend for Beginners.",
+    "course": "Dicoding 2022",
+    "url": "https://www.dicoding.com/certificates/0LZ0G6O3QX65"
+  },
+  {
+    "image": "js-sololearn.jpg",
+    "title": "Learn Basic Javascript Programming.",
+    "course": "Sololearn 2022",
+    "url": "https://www.sololearn.com/Certificate/CT-AIOSN1MX/png"
+  }
 ]
