@@ -10,7 +10,7 @@ export default function Custom404() {
     setTimeout(() => {
       router.push("/");
     }, 3000);
-  }, []);
+  });
 
   return (
     <Layout pageTitle='404 Not Found'>
