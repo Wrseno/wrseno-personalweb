@@ -11,7 +11,7 @@ export default function Projects(props: ProjectProps) {
   const { projects } = props;
 
   return (
-    <Layout pageTitle='Projects Page'>
+    <Layout pageTitle='Wrseno | Projects Page'>
       <main id='project_page' className='pt-32'>
         <section className='container mx-auto max-w-screen-lg'>
           <div className='flex flex-wrap relative'>

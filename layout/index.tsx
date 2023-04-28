@@ -12,12 +12,12 @@ export default function Layout(props: LayoutProps) {
   return (
     <>
       <Head>
-        <title>Wrseno | {pageTitle}</title>
+        <title>{pageTitle}</title>
         <meta name='author' content='Warseno Bambang Setyono' />
         <meta name='description' content='Warseno Personal Website' />
         <meta
           name='keywords'
-          content='Warseno, Warseno Bambang, Warseno Bambang Setyono, wrseno, wrzeno, Warseno SMK 1'
+          content='Warseno, Warseno Bambang, Warseno Bambang Setyono, wrseno, wrzeno'
         />
         <meta
           name='og:title'

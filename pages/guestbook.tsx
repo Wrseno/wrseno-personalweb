@@ -9,7 +9,7 @@ const GuestBook = () => {
   };
 
   return (
-    <Layout pageTitle='Guestbook Page'>
+    <Layout pageTitle='Wrseno | Guestbook Page'>
       <main id='guestbook_page' className='pt-32'>
         <section className='container mx-auto max-w-screen-lg'>
           <div className='flex flex-wrap relative'>

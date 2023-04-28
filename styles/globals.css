@@ -87,12 +87,18 @@ a {
 
 @layer base {
   body {
-    @apply bg-gray-50 text-black dark: bg-black dark:text-white;
+    @apply bg-slate-100 text-black dark:text-white dark:bg-black ease-in-out transition duration-200;
     @apply min-h-screen;
   }
 
   .gradient-content {
-    @apply bg-white text-black dark: bg-black dark:text-white
+    @apply bg-slate-100 text-black dark:text-white dark:bg-black;
   }
 
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    cursor: none;
+  }
 }
