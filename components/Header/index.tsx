@@ -138,7 +138,7 @@ export default function Header() {
                     </span>
                   </Link>
                 </li>
-                <li className='group'>
+                {/* <li className='group'>
                   <Link href='/blog'>
                     <span
                       className={`${
@@ -150,7 +150,7 @@ export default function Header() {
                       Blog
                     </span>
                   </Link>
-                </li>
+                </li> */}
                 <li className='group py-2 mx-8 lg:mx-4'>
                   {renderThemeChanger()}
                 </li>
