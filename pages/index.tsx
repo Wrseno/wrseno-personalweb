@@ -39,11 +39,11 @@ const Home = (props: HomeProps) => {
             <div className='w-full self-end px-4 lg:w-1/2 md:w-1/2'>
               <div className='relative mt-10'>
                 <Image
-                  src='/img/warseno-removebg.png'
+                  src='/img/warseno_bambang.png'
                   alt='Warseno Bambang Setyono'
                   width={400}
                   height={300}
-                  className='max-w-full mx-auto z-10'
+                  className='max-w-full mx-auto z-10 border-b-2 border-black dark:border-white'
                   placeholder='blur'
                   blurDataURL='/img/warseno-removebg.png'
                   unoptimized
