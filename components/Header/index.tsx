@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
-import { SunIcon, MoonIcon } from "@heroicons/react/solid";
-import { useTheme } from "next-themes";
+import {useState, useEffect} from "react";
+import {useRouter} from "next/router";
+import {SunIcon, MoonIcon} from "@heroicons/react/solid";
+import {useTheme} from "next-themes";
 
 export default function Header() {
-  const { asPath } = useRouter();
+  const {asPath} = useRouter();
 
   // hamburger menu
   const [hamburger, setBurgerClass] = useState("hamburger-nonactive");
@@ -30,12 +30,12 @@ export default function Header() {
     setMounted(true);
   }, []);
 
-  const { systemTheme, theme, setTheme } = useTheme();
+  const {systemTheme, theme, setTheme} = useTheme();
 
   const renderThemeChanger = () => {
     if (!mounted) return null;
 
-    const currentTheme = theme === "system" ? systemTheme : theme;
+    const currentTheme = theme === "dark" ? theme : systemTheme;
 
     if (currentTheme === "dark") {
       return (
@@ -100,19 +100,6 @@ export default function Header() {
                   </Link>
                 </li>
                 <li className='group'>
-                  <Link href='/guestbook'>
-                    <span
-                      className={`${
-                        asPath === "/guestbook"
-                          ? "font-bold"
-                          : "dark:text-slate-400 text-slate-600"
-                      } text-base text-dark py-2 mx-8 lg:mx-4 group-hover:text-black dark:group-hover:text-white group-hover:ease-in-out group-hover:duration-300 flex lg:text-lg lg:font-semibold`}
-                    >
-                      Guestbook
-                    </span>
-                  </Link>
-                </li>
-                <li className='group'>
                   <Link href='/achievement'>
                     <span
                       className={`${
@@ -138,19 +125,6 @@ export default function Header() {
                     </span>
                   </Link>
                 </li>
-                {/* <li className='group'>
-                  <Link href='/blog'>
-                    <span
-                      className={`${
-                        asPath === "/blog"
-                          ? "font-bold"
-                          : "dark:text-slate-400 text-slate-600"
-                      } text-base text-dark py-2 mx-8 lg:mx-4 group-hover:text-black dark:group-hover:text-white group-hover:ease-in-out group-hover:duration-300 flex lg:text-lg lg:font-semibold`}
-                    >
-                      Blog
-                    </span>
-                  </Link>
-                </li> */}
                 <li className='group py-2 mx-8 lg:mx-4'>
                   {renderThemeChanger()}
                 </li>
