@@ -2,14 +2,14 @@ import Link from "next/link";
 import Image from "next/image";
 import Layout from "../layout";
 import socialsJSON from "../data/socials.json";
-import { Particles, Glass, Social } from "../components";
+import {Particles, Glass, Social} from "../components";
 
 interface HomeProps {
   socials: Array<any>;
 }
 
 const Home = (props: HomeProps) => {
-  const { socials } = props;
+  const {socials} = props;
 
   return (
     <Layout pageTitle='Warseno Bambang Setyono Personal Website'>

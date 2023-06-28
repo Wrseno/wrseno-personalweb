@@ -1,14 +1,14 @@
 import Layout from "../layout";
 import Image from "next/image";
 import skillsJSON from "../data/skills.json";
-import AboutCard from "../components/AboutCard";
+import AboutCard from "../components/Pages/AboutPages/AboutCard";
 
 interface AboutProps {
   skills: Array<any>;
 }
 
 export default function About(props: AboutProps) {
-  const { skills } = props;
+  const {skills} = props;
 
   return (
     <Layout pageTitle='Wrseno | About Page'>

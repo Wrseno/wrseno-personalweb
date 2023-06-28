@@ -1,14 +1,14 @@
 import React from "react";
 import Layout from "../layout";
 import projectsJSON from "../data/projects.json";
-import ProjectsCard from "../components/ProjectsCard";
+import ProjectsCard from "../components/Pages/ProjectPages/ProjectsCard";
 
 interface ProjectProps {
   projects: Array<any>;
 }
 
 export default function Projects(props: ProjectProps) {
-  const { projects } = props;
+  const {projects} = props;
 
   return (
     <Layout pageTitle='Wrseno | Projects Page'>
