@@ -13,7 +13,7 @@ interface AchievementCardProps {
 }
 
 export default function AchievementCard(props: AchievementCardProps) {
-  const { layout, ach } = props;
+  const {layout, ach} = props;
 
   return (
     <div className='shadow-neumorphism bg-white dark:shadow-dark-neumorphism dark:bg-dark md:p-0 rounded-lg mb-14'>

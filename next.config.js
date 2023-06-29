@@ -4,10 +4,10 @@ const nextConfig = {
   swcMinify: true,
   images: {
     loader: "akamai",
-    path: " ",
-    domains: ["media.graphassets.com"]
+    path: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons",
+    domains: ["media.graphassets.com"],
   },
-  assetPrefix:'/',
+  assetPrefix: "/",
 };
 
 module.exports = nextConfig;

@@ -1,34 +1,50 @@
 [
   {
     "title": "HTML",
-    "image": "html.png"
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
   },
   {
     "title": "CSS",
-    "image": "css.png"
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
   },
   {
     "title": "Javascript",
-    "image": "js.png"
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
   },
   {
     "title": "PHP",
-    "image": "php.png"
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg"
   },
   {
     "title": "Tailwind",
-    "image": "tailwind-css.png"
-  },
-  {
-    "title": "Bootstrap",
-    "image": "bootstrap.png"
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
   },
   {
     "title": "React JS",
-    "image": "react.png"
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+  },
+  {
+    "title": "Next Js",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
   },
   {
     "title": "Laravel",
-    "image": "laravel.png"
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg"
+  },
+  {
+    "title": "Express",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg"
+  },
+  {
+    "title": "Node",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+  },
+  {
+    "title": "MySQL",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+  },
+  {
+    "title": "PostgreSQL",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg"
   }
 ]

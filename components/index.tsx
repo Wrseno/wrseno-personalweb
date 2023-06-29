@@ -6,3 +6,5 @@ export {default as Social} from "./Pages/HomePages/Social";
 export {default as Header} from "./Header";
 export {default as Particles} from "./Pages/HomePages/particles";
 export {default as Glass} from "./Pages/HomePages/glass";
+export {default as PersonalInformation} from "./Pages/HomePages/PersonalInformation/PersonalInformation";
+export {default as PersonalImage} from "./Pages/HomePages/PersonalInformation/PersonalImage";
