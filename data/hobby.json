@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "web-development",
+    "title": "Web Development",
+    "description": "Build and learn about Web Development or Programming."
+  },
+  {
+    "icon": "design",
+    "title": "Design",
+    "description": " Make high quality designs. Like a professional."
+  },
+  {
+    "icon": "3d-modeling",
+    "title": "3D Modeling",
+    "description": "Create 3d assets or models for editing and graphic design."
+  },
+  {
+    "icon": "photography",
+    "title": "Photography",
+    "description": "I like photography, even though I&#39;m not an expert in this field."
+  }
+]

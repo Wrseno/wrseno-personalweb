@@ -1,20 +1,39 @@
 import Layout from "../layout";
 import Image from "next/image";
 import skillsJSON from "../data/skills.json";
+import hobbiesJSON from "../data/hobby.json";
 import AboutCard from "../components/Pages/AboutPages/AboutCard";
+import Hobby from "../components/Pages/AboutPages/Hobby";
 
 interface AboutProps {
   skills: Array<any>;
+  hobbies: Array<any>;
 }
 
 export default function About(props: AboutProps) {
-  const {skills} = props;
+  const {skills, hobbies} = props;
+  console.log(hobbies);
 
   return (
     <Layout pageTitle='Wrseno | About Page'>
       <main id='about_page' className='pt-32'>
         <section className='container mx-auto max-w-screen-lg'>
           <AboutCard />
+          <div className='w-full self-center my-8'>
+            <h1 className='text-lg font-bold mb-4 lg:text-xl'>
+              What I&#39;m Doing
+            </h1>
+            <ul className='grid lg:grid-cols-2 md:grid-cols-2'>
+              {hobbies.map((hobby, index) => (
+                <Hobby
+                  key={index}
+                  icon={hobby.icon}
+                  title={hobby.title}
+                  description={hobby.description}
+                />
+              ))}
+            </ul>
+          </div>
 
           <div className='w-full self-center'>
             <h1 className='text-lg font-bold lg:my-8 mt-12 lg:text-xl'>
@@ -53,10 +72,12 @@ export default function About(props: AboutProps) {
 
 export async function getStaticProps() {
   const skills = skillsJSON;
+  const hobbies = hobbiesJSON;
 
   return {
     props: {
       skills,
+      hobbies,
     },
   };
 }

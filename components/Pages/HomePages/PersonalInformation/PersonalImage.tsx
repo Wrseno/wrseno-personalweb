@@ -12,7 +12,7 @@ const PersonalImage = () => {
           height={300}
           className='max-w-full mx-auto z-10 border-b-2 border-black dark:border-white'
           placeholder='blur'
-          blurDataURL='/img/warseno-removebg.png'
+          blurDataURL='/img/warseno-bambang-setyono.png'
           unoptimized
         />
         <span className='absolute mx-auto -bottom-0 lg:-bottom-16 -z-10 lg:left-40 left-28 -translate-x-1/2 w-full'>
