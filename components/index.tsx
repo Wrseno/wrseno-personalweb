@@ -1,4 +1,5 @@
 export {default as AboutCard} from "./Pages/AboutPages/AboutCard";
+export {default as Hobby} from "./Pages/AboutPages/Hobby";
 export {default as AchievementCard} from "./Pages/AchievementPages/AchievementCard";
 export {default as ProjectsCard} from "./Pages/ProjectPages/ProjectsCard";
 export {default as CertificateCard} from "./Pages/CertificatePages/CertificateCard";
