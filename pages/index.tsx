@@ -1,3 +1,4 @@
+import React from "react";
 import Layout from "../layout";
 import socialsJSON from "../data/socials.json";
 import {PersonalInformation, PersonalImage, Social} from "../components";

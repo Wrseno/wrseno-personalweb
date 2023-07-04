@@ -1,7 +1,8 @@
+import React from "react";
 import Layout from "../layout";
 import achievementJSON from "../data/achievements.json";
 import certificateJSON from "../data/certificate.json";
-import { AchievementCard, CertificateCard } from "../components";
+import {AchievementCard, CertificateCard} from "../components";
 
 interface AchievementProps {
   achievement: Array<any>;
@@ -9,7 +10,7 @@ interface AchievementProps {
 }
 
 export default function Achievement(props: AchievementProps) {
-  const { achievement, certificate } = props;
+  const {achievement, certificate} = props;
 
   return (
     <Layout pageTitle='Wrseno | Achievements Page'>
@@ -40,9 +41,7 @@ export default function Achievement(props: AchievementProps) {
               </h1>
               <ul className='grid md:grid-cols-3 md:gap-4 lg:gap-6 mb-4'>
                 {certificate.map((cert, index) => {
-                  return (
-                    <CertificateCard key={index} cert={cert} />
-                  );
+                  return <CertificateCard key={index} cert={cert} />;
                 })}
               </ul>
             </div>

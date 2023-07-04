@@ -1,3 +1,4 @@
+import React from "react";
 import Layout from "../layout";
 import Image from "next/image";
 import skillsJSON from "../data/skills.json";

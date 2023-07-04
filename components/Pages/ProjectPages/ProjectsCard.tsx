@@ -1,6 +1,7 @@
+import React from "react";
 import Image from "next/image";
-import { BsGithub } from "react-icons/bs";
-import { BsLink45Deg } from "react-icons/bs";
+import {BsGithub} from "react-icons/bs";
+import {BsLink45Deg} from "react-icons/bs";
 import Link from "next/link";
 
 interface ProjectsDetail {
@@ -18,7 +19,7 @@ interface ProjectCardProps {
 }
 
 export default function ProjectsCard(props: ProjectCardProps) {
-  const { layout, project } = props;
+  const {layout, project} = props;
 
   return (
     <>
