@@ -1,14 +1,13 @@
 import Head from "next/head";
 import Header from "../components/Header";
-import Footer from "../components/Footer";
-import { ReactNode } from "react";
+import {ReactNode} from "react";
 
 interface LayoutProps {
   children: ReactNode;
   pageTitle: string;
 }
 export default function Layout(props: LayoutProps) {
-  const { children, pageTitle } = props;
+  const {children, pageTitle} = props;
   return (
     <>
       <Head>
@@ -29,7 +28,6 @@ export default function Layout(props: LayoutProps) {
       </Head>
       <Header />
       <div>{children}</div>
-      <Footer />
     </>
   );
 }
