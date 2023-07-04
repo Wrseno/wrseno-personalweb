@@ -11,7 +11,10 @@ const Home = (props: HomeProps) => {
 
   return (
     <Layout pageTitle='Warseno Bambang Setyono Personal Website'>
-      <main id='home_page' className='md:pt-32 pt-24'>
+      <main
+        id='home_page'
+        className='flex justify-center items-center h-vh-screen'
+      >
         <section className='container mx-auto max-w-screen-lg'>
           <div className='flex flex-wrap'>
             <PersonalImage />
