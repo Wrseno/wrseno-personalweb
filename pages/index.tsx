@@ -22,8 +22,8 @@ const Home = (props: HomeProps) => {
             <PersonalInformation
               greeting='Hello,'
               nickname='I&#39;m Seno.'
-              fullname='My full name is Warseno Bambang Setyono.'
-              profession='I&#39;m a Student, Junior Web Developer and Content Creator.'
+              fullname='My full name is Warseno Bambang Setyono. '
+              profession='I&#39;m a Student, Junior Web Developer and Content Creator. '
               welcome='Welcome to my personal website, where you can find my achievements, projects, and more.'
             />
 
