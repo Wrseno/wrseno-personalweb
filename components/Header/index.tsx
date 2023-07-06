@@ -1,13 +1,11 @@
 import React from "react";
 import Link from "next/link";
 import {useState, useEffect} from "react";
-import {useRouter} from "next/router";
 import {SunIcon, MoonIcon} from "@heroicons/react/solid";
 import {useTheme} from "next-themes";
+import ListItem from "./ListItem";
 
 export default function Header() {
-  const {asPath} = useRouter();
-
   // hamburger menu
   const [hamburger, setBurgerClass] = useState("hamburger-nonactive");
   const [menu_class, setMenuClass] = useState("menu-hidden");
@@ -87,45 +85,9 @@ export default function Header() {
               shadow-lg rounded-lg w-full right-0 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none'
             >
               <ul className='block lg:flex items-center'>
-                <li className='group'>
-                  <Link href='/about'>
-                    <span
-                      className={`${
-                        asPath === "/about"
-                          ? "font-bold"
-                          : "dark:text-slate-400 text-slate-600"
-                      } text-base text-dark py-2 mx-8 lg:mx-4 group-hover:text-black dark:group-hover:text-white group-hover:ease-in-out group-hover:duration-300 flex lg:text-lg lg:font-semibold`}
-                    >
-                      About
-                    </span>
-                  </Link>
-                </li>
-                <li className='group'>
-                  <Link href='/achievement'>
-                    <span
-                      className={`${
-                        asPath === "/achievement"
-                          ? "font-bold"
-                          : "dark:text-slate-400 text-slate-600"
-                      } text-base text-dark py-2 mx-8 lg:mx-4 group-hover:text-black dark:group-hover:text-white group-hover:ease-in-out group-hover:duration-300 flex lg:text-lg lg:font-semibold`}
-                    >
-                      Achievements
-                    </span>
-                  </Link>
-                </li>
-                <li className='group'>
-                  <Link href='/project'>
-                    <span
-                      className={`${
-                        asPath === "/project"
-                          ? "font-bold"
-                          : "dark:text-slate-400 text-slate-600"
-                      } text-base text-dark py-2 mx-8 lg:mx-4 group-hover:text-black dark:group-hover:text-white group-hover:ease-in-out group-hover:duration-300 flex lg:text-lg lg:font-semibold`}
-                    >
-                      Projects
-                    </span>
-                  </Link>
-                </li>
+                <ListItem path='/about' title='About' />
+                <ListItem path='/achievement' title='Achievements' />
+                <ListItem path='/project' title='Projects' />
                 <li className='group py-2 mx-8 lg:mx-4'>
                   {renderThemeChanger()}
                 </li>

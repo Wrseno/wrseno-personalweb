@@ -23,7 +23,7 @@ export default function Social(props: SocialProps) {
         <button onClick={() => window.open(social.url, "_blank")}>
           <FontAwesomeIcon
             icon={["fab", social.name]}
-            className='w-8 h-8 lg:w-10 lg:h-10 hover:text-primary text-slate-500 hover:ease-linear hover:duration-300'
+            className='w-8 h-8 lg:w-10 lg:h-10 dark:hover:text-white dark:text-slate-400 text-slate-600 hover:text-black hover:ease-linear hover:duration-300'
           />
         </button>
       </li>

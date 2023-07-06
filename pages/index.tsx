@@ -28,7 +28,7 @@ const Home = (props: HomeProps) => {
             />
 
             <div className='relative'>
-              <ul className='absolute right-6 top-20 lg:top-24'>
+              <ul className='absolute right-6 top-20 lg:top-24 shadow-md p-2 backdrop-blur-sm bg-opacity-50'>
                 {socials.map((item, index) => {
                   return <Social key={index} social={item} />;
                 })}
