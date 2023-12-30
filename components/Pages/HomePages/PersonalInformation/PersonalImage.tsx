@@ -7,7 +7,7 @@ const PersonalImage = () => {
     <div className='w-full self-end px-4 lg:w-1/2 md:w-1/2'>
       <div className='relative mt-10'>
         <Image
-          src='/img/warseno-bambang-setyono.png'
+          src='/img/warseno_bambang.png'
           alt='Warseno Bambang Setyono'
           width={400}
           height={300}
